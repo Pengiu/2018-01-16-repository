@@ -12,17 +12,24 @@
 				width: 300px;
 				height: 300px;
 			}
+			#jk{
+				width: 500px;
+				height: 500px;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="box"></div>
 		<div id="jk"></div>
+		<div id="ok"></div>
 	</body>
 	<script>
 	 	// 随机生成颜色两种方法
 	 	var box = document.getElementById('box');
 	 	var jk = document.getElementById('jk');
+	 	var ok = document.getElementById('ok');
 	 	jk.style.backgroundColor = randomColor();
+	 	ok.style.backgroundColor = randomColor();
 	 	box.style.backgroundColor ="rgb("+getColor()+","+getColor()+","+getColor()+")";
 		function randomColor() {
 	    	return '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6);
